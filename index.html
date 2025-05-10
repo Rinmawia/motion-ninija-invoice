@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="invoice-page">
+    <main class="invoice-content">
+      <div class="logo-placeholder">
+        <svg width="100%" height="auto" viewBox="0 0 540 62" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+          <mask id="mask0_1_126" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="540" height="60">
+            <path d="M539.47 0H0V59.8959H539.47V0Z" fill="white" />
+          </mask>
+          <g mask="url(#mask0_1_126)">
+            <path d="M172.743 0V10.6346H154.774V60.0601H142.145V10.6346H124.094V0H172.743Z" fill="black" />
+            <path d="M178.473 15.6461H190.249V60.0601H178.473V15.6461Z" fill="black" />
+            <path d="M190.249 10.3473H178.473V0H190.249V10.3473Z" fill="black" />
+            <path d="M258.789 0H271.947L295.786 41.8734V0H307.48V60.0601H294.932L270.482 17.4397V60.0601H258.789V0Z"
+              fill="black" />
+            <path d="M363.571 0H350.412L326.573 41.8734V0H314.88V60.0601H327.427L351.877 17.4397V60.0601H363.571V0Z"
+              fill="black" />
+            <path d="M382.176 10.3473H370.4V0H382.176V10.3473ZM370.4 15.6461H382.176V60.0601H370.4V15.6461Z" fill="black" />
+            <path d="M389.983 0H403.141L426.98 41.8734V0H438.673V60.0601H426.126L401.676 17.4397V60.0601H389.983V0Z"
+              fill="black" />
+            <path
+              d="M504.02 0L482.583 60.0601H495.708L498.602 51.2848L499.78 47.714L503.195 37.3626L503.934 35.1216L510.989 13.7252L517.704 34.6496L518.574 37.3585L521.899 47.7099L523.877 53.8829L525.86 60.056H539.47L518.221 0H504.02Z"
+              fill="black" />
+            <path
+              d="M114.617 -40.9007C110.081 -45.5715 103.518 -47.9069 94.9358 -47.9069C86.3535 -47.9069 79.7905 -45.5715 75.2551 -40.9007C69.1723 -35.1709 66.1268 -26.9128 66.1268 -16.1263C66.1268 -5.3399 69.1682 3.13164 75.2551 8.64799C79.7946 13.3188 86.3535 15.6542 94.9358 15.6542C103.518 15.6542 110.081 13.3188 114.617 8.64799C120.675 3.13574 123.704 -5.12237 123.704 -16.1263C123.704 -27.1303 120.675 -35.1668 114.617 -40.9007ZM106.773 -31.7724C109.691 -28.1072 111.152 -22.8904 111.152 -16.1263C111.152 -9.36224 109.691 -4.17424 106.773 -0.492571C103.855 3.1891 99.9063 5.01967 94.9358 5.01967C89.9653 5.01967 86.0005 3.185 83.0371 -0.480258C80.0778 -4.14551 78.5961 -9.36224 78.5961 -16.1263C78.5961 -22.8904 80.0778 -28.1072 83.0371 -31.7724C85.9964 -35.4377 89.9653 -37.2723 94.9358 -37.2723C99.9063 -37.2723 103.851 -35.4377 106.773 -31.7724Z"
+              fill="black" />
+            <path
+              d="M114.617 27.5407C110.081 22.8698 103.518 20.5344 94.9358 20.5344C86.3535 20.5344 79.7905 22.8698 75.2551 27.5407C69.1723 33.2705 66.1268 41.5286 66.1268 52.315C66.1268 63.1014 69.1682 71.573 75.2551 77.0893C79.7946 81.7602 86.3535 84.0956 94.9358 84.0956C103.518 84.0956 110.081 81.7602 114.617 77.0893C120.675 71.5771 123.704 63.319 123.704 52.315C123.704 41.311 120.675 33.2746 114.617 27.5407ZM106.773 36.6689C109.691 40.3342 111.152 45.5509 111.152 52.315C111.152 59.0791 109.691 64.2671 106.773 67.9488C103.855 71.6304 99.9063 73.461 94.9358 73.461C89.9653 73.461 86.0005 71.6263 83.0371 67.9611C80.0778 64.2958 78.5961 59.0791 78.5961 52.315C78.5961 45.5509 80.0778 40.3342 83.0371 36.6689C85.9964 33.0037 89.9653 31.169 94.9358 31.169C99.9063 31.169 103.851 33.0037 106.773 36.6689Z"
+              fill="black" />
+            <path
+              d="M204.77 -16.7625C209.306 -21.4334 215.869 -23.7688 224.451 -23.7688C233.033 -23.7688 239.596 -21.4334 244.132 -16.7625C250.215 -11.0328 253.26 -2.77465 253.26 8.01178C253.26 18.7982 250.219 27.2698 244.132 32.7861C239.592 37.4569 233.033 39.7924 224.451 39.7924C215.869 39.7924 209.306 37.4569 204.77 32.7861C198.712 27.2739 195.683 19.0158 195.683 8.01178C195.683 -2.99219 198.712 -11.0287 204.77 -16.7625ZM212.614 -7.63429C209.696 -3.96904 208.234 1.24769 208.234 8.01178C208.234 14.7759 209.696 19.9639 212.614 23.6456C215.532 27.3272 219.481 29.1578 224.451 29.1578C229.422 29.1578 233.386 27.3231 236.35 23.6579C239.309 19.9926 240.791 14.7759 240.791 8.01178C240.791 1.24769 239.309 -3.96904 236.35 -7.63429C233.39 -11.2995 229.422 -13.1342 224.451 -13.1342C219.481 -13.1342 215.536 -11.2995 212.614 -7.63429Z"
+              fill="black" />
+            <path
+              d="M204.77 51.6788C209.306 47.008 215.869 44.6725 224.451 44.6725C233.033 44.6725 239.596 47.008 244.132 51.6788C250.215 57.4086 253.26 65.6667 253.26 76.4531C253.26 87.2396 250.219 95.7111 244.132 101.227C239.592 105.898 233.033 108.234 224.451 108.234C215.869 108.234 209.306 105.898 204.77 101.227C198.712 95.7152 195.683 87.4571 195.683 76.4531C195.683 65.4492 198.712 57.4127 204.77 51.6788ZM212.614 60.8071C209.696 64.4723 208.234 69.689 208.234 76.4531C208.234 83.2172 209.696 88.4052 212.614 92.0869C215.532 95.7686 219.481 97.5991 224.451 97.5991C229.422 97.5991 233.386 95.7645 236.35 92.0992C239.309 88.434 240.791 83.2172 240.791 76.4531C240.791 69.689 239.309 64.4723 236.35 60.8071C233.39 57.1418 229.422 55.3071 224.451 55.3071C219.481 55.3071 215.536 57.1418 212.614 60.8071Z"
+              fill="black" />
+            <path
+              d="M11.517 0.135437H1.93317C1.25313 0.135437 0.701843 0.686721 0.701843 1.36677V58.8411C0.701843 59.5211 1.25313 60.0724 1.93317 60.0724H11.517C12.1971 60.0724 12.7483 59.5211 12.7483 58.8411V1.36677C12.7483 0.686721 12.1971 0.135437 11.517 0.135437Z"
+              fill="black" />
+            <path
+              d="M35.413 -0.0123901H25.9277C25.2476 -0.0123901 24.6964 0.538894 24.6964 1.21894V28.8705C24.6964 29.5505 25.2476 30.1018 25.9277 30.1018H35.413C36.0931 30.1018 36.6443 29.5505 36.6443 28.8705V1.21894C36.6443 0.538894 36.0931 -0.0123901 35.413 -0.0123901Z"
+              fill="black" />
+            <path
+              d="M59.6045 0.135437H49.9221C49.2421 0.135437 48.6908 0.686721 48.6908 1.36677V58.8411C48.6908 59.5211 49.2421 60.0724 49.9221 60.0724H59.6045C60.2845 60.0724 60.8358 59.5211 60.8358 58.8411V1.36677C60.8358 0.686721 60.2845 0.135437 59.6045 0.135437Z"
+              fill="black" />
+          </g>
+          <path
+            d="M456.749 0V10.3473H468.525V42.0129C468.525 44.9189 468.258 46.9834 467.72 48.2065C466.826 50.271 465.016 51.3012 462.208 51.3012C459.401 51.3012 457.57 50.349 456.716 48.461C455.859 46.5729 455.383 43.314 455.28 38.6678V37.2805L455.288 15.6461H443.43V38.6637C443.43 45.7233 444.727 51.293 447.334 55.381C449.936 59.469 455.05 61.5213 462.672 61.5213C470.294 61.5213 475.568 58.997 478.486 53.9445C480.214 50.9565 481.076 46.9095 481.076 41.8036V0H456.749Z"
+            fill="black" />
+        </svg>
+
+      </div>
+  
+      <div class="row invoice-meta-header">
+        <div class="col-4 invoice-title-col">
+          <h1>INVOICE</h1>
+        </div>
+        <div class="col-5 invoice-details-col">
+          <p>No xxxxxxxxxxxx</p>
+        </div>
+        <div class="col-3 invoice-details-col">
+          <p>Date - May 9, 2025</p>
+          <p>Due date - May 25, 2025</p>
+        </div>
+      </div>
+  
+      <hr class="divider-major">
+  
+      <div class="address-section">
+        <div class="bill-to-section">
+          <h2>Bill to</h2>
+          <div class="row regular-font-weight">
+            <div class="col-4 address-details">
+              <p>Company Name</p>
+              <p>Adress lilne 1</p>
+              <p>Address line 2</p>
+            </div>
+            <div class="col-5 contact-details">
+              <p>est@example.com</p>
+              <p>XX XXXXXXXXX</p>
+            </div>
+            <div class="col-3 tax-details">
+              <p>GST-XXXXXXXXXX</p>
+              <p>PAN XXXXXX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="address-section from-section">
+        <div>
+          <h2>From</h2>
+          <div class="row regular-font-weight">
+            <div class="col-4 address-details">
+              <p>Company Name</p>
+              <p>Adress lilne 1</p>
+              <p>Address line 2</p>
+            </div>
+            <div class="col-5 contact-details">
+              <p>est@example.com</p>
+              <p>XX XXXXXXXXX</p>
+              <p> </p>
+            </div>
+            <div class="col-3 tax-details">
+              <p>GST-XXXXXXXXXX</p>
+              <p>PAN XXXXXX</p>
+              <p> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="items-table">
+        <div class="row item-header">
+          <div class="col-4">Description</div>
+          <div class="col-3">Amount</div>
+          <div class="col-2">Quantity</div>
+          <div class="col-3">Total</div>
+        </div>
+        <hr class="divider-minor">
+        <div class="row item-row">
+          <div class="col-4">Life action CG compositing</div>
+          <div class="col-3">00000000</div>
+          <div class="col-2">2</div>
+          <div class="col-3">00000000</div>
+        </div>
+        <div class="row item-row">
+          <div class="col-4">Life action CG compositing</div>
+          <div class="col-3">00000000</div>
+          <div class="col-2">2</div>
+          <div class="col-3">00000000</div>
+        </div>
+        <div class="row item-row">
+          <div class="col-4">Life action CG compositing</div>
+          <div class="col-3">00000000</div>
+          <div class="col-2">2</div>
+          <div class="col-3">00000000</div>
+        </div>
+      </div>
+  
+      <div class="row totals-section-container">
+        <div class="col-4"></div> <!-- Spacer column, now a grid item -->
+        <div class="col-5"> <!-- This is a grid item -->
+          <div class="totals-item">
+            <span>Net total</span>
+          </div>
+          <div class="totals-item">
+            <span>TDS 10%</span>
+          </div>
+          <div class="totals-item">
+            <span>Total</span>
+          </div>
+          <div class="totals-spacer"></div>
+          <div class="totals-item">
+            <span>Paid to date</span>
+          </div>
+          <div class="totals-item">
+            <span>Balance Due</span>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="totals-item">
+            <span>00000000</span>
+          </div>
+          <div class="totals-item">
+            <span>00000000</span>
+          </div>
+          <div class="totals-item">
+            <span>00000000</span>
+          </div>
+          <div class="totals-spacer"></div>
+          <div class="totals-item">
+            <span>00000000</span>
+          </div>
+          <div class="totals-item">
+            <span>00000000</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="scope-of-work-section">
+        <h3>Scope of work</h3>
+        <p>Company Name 0000000000 0000000000 0000000000 0000000000</p>
+        <p>0000000000</p>
+        <p>Adress lilne 1</p>
+        <p>Address line 2</p>
+        <p>0000000000</p>
+      </div>
+  
+    </main>
+  
+    <footer class="invoice-footer">
+      <hr class="divider-major">
+      <div class="row">
+        <div class="col-4 payment-details-footer">
+          <h2>PAYMENT</h2>
+          <p>Company Name</p>
+          <p>Adress lilne 1</p>
+          <p>Address line 2</p>
+        </div>
+        <div class="col-8 invoice-terms-footer">
+          <h3>Invoice terms</h3>
+          <p>Company Name 0000000000 0000000000 0000000000 0000000000</p>
+          <p>0000000000</p>
+          <p>Adress lilne 1</p>
+          <p>Address line 2</p>
+          <p>0000000000</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
