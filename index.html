@@ -64,11 +64,11 @@
           <h1>INVOICE</h1>
         </div>
         <div class="col-5 invoice-details-col">
-          <p>No xxxxxxxxxxxx</p>
+          <p>$invoice.number</p>
         </div>
         <div class="col-3 invoice-details-col">
-          <p>Date - May 9, 2025</p>
-          <p>Due date - May 25, 2025</p>
+          <p>Date - $invoice.date</p>
+          <p>Due date - $invoice.due_date</p>
         </div>
       </div>
   
@@ -79,17 +79,17 @@
           <h2>Bill to</h2>
           <div class="row regular-font-weight">
             <div class="col-4 address-details">
-              <p>Company Name</p>
-              <p>Adress lilne 1</p>
-              <p>Address line 2</p>
+              <p>$client.name</p>
+              <p>$client.address1</p>
+              <p>$client.address2</p>
             </div>
             <div class="col-5 contact-details">
-              <p>est@example.com</p>
-              <p>XX XXXXXXXXX</p>
+              <p>$client.email</p>
+              <p>$client.phone</p>
             </div>
             <div class="col-3 tax-details">
-              <p>GST-XXXXXXXXXX</p>
-              <p>PAN XXXXXX</p>
+              <p>GST-$client.gst_number</p>
+              <p>PAN $client.pan_number</p>
             </div>
           </div>
         </div>
@@ -100,18 +100,18 @@
           <h2>From</h2>
           <div class="row regular-font-weight">
             <div class="col-4 address-details">
-              <p>Company Name</p>
-              <p>Adress lilne 1</p>
-              <p>Address line 2</p>
+              <p>$company.name</p>
+              <p>$company.address1</p>
+              <p>$company.address2</p>
             </div>
             <div class="col-5 contact-details">
-              <p>est@example.com</p>
-              <p>XX XXXXXXXXX</p>
+              <p>$company.email</p>
+              <p>$company.phone</p>
               <p> </p>
             </div>
             <div class="col-3 tax-details">
-              <p>GST-XXXXXXXXXX</p>
-              <p>PAN XXXXXX</p>
+              <p>GST-$company.gst_number</p>
+              <p>PAN $company.pan_number</p>
               <p> </p>
             </div>
           </div>
@@ -126,24 +126,14 @@
           <div class="col-3">Total</div>
         </div>
         <hr class="divider-minor">
+        @foreach($invoice.line_items as $item)
         <div class="row item-row">
-          <div class="col-4">Life action CG compositing</div>
-          <div class="col-3">00000000</div>
-          <div class="col-2">2</div>
-          <div class="col-3">00000000</div>
+          <div class="col-4">$item.description</div>
+          <div class="col-3">$item.cost</div>
+          <div class="col-2">$item.quantity</div>
+          <div class="col-3">$item.line_total</div>
         </div>
-        <div class="row item-row">
-          <div class="col-4">Life action CG compositing</div>
-          <div class="col-3">00000000</div>
-          <div class="col-2">2</div>
-          <div class="col-3">00000000</div>
-        </div>
-        <div class="row item-row">
-          <div class="col-4">Life action CG compositing</div>
-          <div class="col-3">00000000</div>
-          <div class="col-2">2</div>
-          <div class="col-3">00000000</div>
-        </div>
+        @endforeach
       </div>
   
       <div class="row totals-section-container">
@@ -168,31 +158,29 @@
         </div>
         <div class="col-3">
           <div class="totals-item">
-            <span>00000000</span>
+            <span>$invoice.subtotal</span>
           </div>
           <div class="totals-item">
-            <span>00000000</span>
+            <span>$invoice.tds_amount</span>
           </div>
           <div class="totals-item">
-            <span>00000000</span>
+            <span>$invoice.total</span>
           </div>
           <div class="totals-spacer"></div>
           <div class="totals-item">
-            <span>00000000</span>
+            <span>$invoice.amount_paid</span>
           </div>
           <div class="totals-item">
-            <span>00000000</span>
+            <span>$invoice.balance_due</span>
           </div>
         </div>
       </div>
   
       <div class="scope-of-work-section">
         <h3>Scope of work</h3>
-        <p>Company Name 0000000000 0000000000 0000000000 0000000000</p>
-        <p>0000000000</p>
-        <p>Adress lilne 1</p>
-        <p>Address line 2</p>
-        <p>0000000000</p>
+        @foreach($invoice.tasks as $task)
+        <p>$task.description</p>
+        @endforeach
       </div>
   
     </main>
@@ -202,17 +190,15 @@
       <div class="row">
         <div class="col-4 payment-details-footer">
           <h2>PAYMENT</h2>
-          <p>Company Name</p>
-          <p>Adress lilne 1</p>
-          <p>Address line 2</p>
+          <p>Bank Name: $company.bank_name</p>
+          <p>Account Number: $company.bank_account</p>
+          <p>IFSC Code: $company.bank_ifsc</p>
         </div>
         <div class="col-8 invoice-terms-footer">
           <h3>Invoice terms</h3>
-          <p>Company Name 0000000000 0000000000 0000000000 0000000000</p>
-          <p>0000000000</p>
-          <p>Adress lilne 1</p>
-          <p>Address line 2</p>
-          <p>0000000000</p>
+          @foreach($invoice.terms as $term)
+          <p>$term</p>
+          @endforeach
         </div>
       </div>
     </footer>
